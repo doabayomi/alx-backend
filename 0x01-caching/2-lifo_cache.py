@@ -30,7 +30,7 @@ class LIFOCache(BaseCaching):
         self.cache_data[key] = item
         if len(self.cache_data) > self.MAX_ITEMS:
             last_in_key = self.cache_data.popitem(last=True)
-            print(f"DISCARD:{last_in_key}")
+            print(f"DISCARD: {last_in_key}")
 
     def get(self, key):
         """Retrieves dta from the cache
