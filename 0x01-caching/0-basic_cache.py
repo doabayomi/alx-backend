@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" BaseCaching module
+""" Basic Caching Implementation
 """
 from collections import OrderedDict
 from base_cache import BaseCaching
