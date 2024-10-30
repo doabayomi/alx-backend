@@ -6,6 +6,11 @@ from base_caching import BaseCaching
 
 
 class MRUCache(BaseCaching):
+    """A MRU cache (most recently used)
+
+    Args:
+        BaseCaching: base caching class
+    """
     def __init__(self):
         """Initializaiton of cache
         """

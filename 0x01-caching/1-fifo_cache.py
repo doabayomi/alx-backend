@@ -6,6 +6,11 @@ from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
+    """A FIFO (queue) Cache
+
+    Args:
+        BaseCaching: base cache class
+    """
     def __init__(self):
         """Initialization with ordered dictionary
         """

@@ -6,6 +6,11 @@ from base_caching import BaseCaching
 
 
 class LRUCache(BaseCaching):
+    """A LRU cache (least recently used)
+
+    Args:
+        BaseCaching: base cache class
+    """
     def __init__(self):
         """Initializaiton of cache
         """

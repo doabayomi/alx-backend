@@ -6,6 +6,11 @@ from base_caching import BaseCaching
 
 
 class LIFOCache(BaseCaching):
+    """A LIFO (stack) cache
+
+    Args:
+        BaseCaching: base cache class
+    """
     def __init__(self):
         """Initialization with ordered dictionary
         """
