@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ Least Recently Used Caching Implementation
 """
 from collections import OrderedDict
