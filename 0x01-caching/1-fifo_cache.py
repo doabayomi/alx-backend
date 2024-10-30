@@ -29,7 +29,8 @@ class FIFOCache(BaseCaching):
 
         self.cache_data[key] = item
         if len(self.cache_data) > self.MAX_ITEMS:
-            self.cache_data.popitem(last=False)
+            first_in_key, _ = self.cache_data.popitem(last=False)
+            print(f"DISCARD:{first_in_key}")
 
     def get(self, key):
         """Retrieves dta from the cache

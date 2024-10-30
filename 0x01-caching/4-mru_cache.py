@@ -27,7 +27,8 @@ class MRUCache(BaseCaching):
             self.cache_data.move_to_end(key)
 
         if len(self.cache_data) >= self.MAX_ITEMS:
-            self.cache_data.popitem(last=True)
+            mru_key, _ = self.cache_data.popitem(last=True)
+            print(f"DISCARD:{mru_key}")
         self.cache_data[key] = item
 
     def get(self, key):
