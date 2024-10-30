@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 """ Basic Caching Implementation
 """
-from collections import OrderedDict
 from base_cache import BaseCaching
 
 
 class BasicCache(BaseCaching):
+    """A basic caching system inheriting from base caching
+
+    Args:
+        BaseCaching: A base class for caches
+    """
     def __init__(self):
         """Initializaiton of cache
         """
