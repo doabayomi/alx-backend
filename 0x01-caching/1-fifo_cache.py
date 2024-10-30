@@ -2,7 +2,7 @@
 """ FIFO Caching Implementation
 """
 from collections import OrderedDict
-from base_cache import BaseCaching
+from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
